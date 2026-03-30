@@ -32,7 +32,10 @@ refactor: Cấu trúc lại code nhưng không đổi tính năng (Ví dụ: ref
 3. QUY TRÌNH LÀM VIỆC VỚI GITHUB (PULL REQUEST)
 Không bao giờ được dùng lệnh git push origin develop trực tiếp. Phải tuân theo 5 bước:
 
-Cập nhật code mới nhất: git pull origin develop trước khi bắt đầu code.
+Khi mới tham gia project, bạn cần clone code từ GitHub: git clone <URL_repository> 
+(ví dụ : git clone https://github.com/quocne2004/POP_CINEMA_ONLINE.git)
+
+Cập nhật khi có code mới nhất: git pull origin develop trước khi bắt đầu code tiếp .
 
 Tạo nhánh mới: git checkout -b feature/...
 
