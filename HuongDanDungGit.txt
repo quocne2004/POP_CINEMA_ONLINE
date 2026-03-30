@@ -1,0 +1,41 @@
+*TÀI LIỆU QUY ĐỊNH SỬ DỤNG GIT & GITHUB*
+
+1. QUY ĐỊNH VỀ NHÁNH (BRANCHING STRATEGY)
+
+main: Nhánh chứa code sạch, đã test và chạy ổn định. Chỉ Leader mới có quyền gộp code vào đây.
+
+develop: Nhánh tích hợp chính. Các thành viên sẽ gộp tính năng vào đây để test chung.
+
+Nhánh tính năng (Feature branches): Mỗi sinh viên khi làm một task phải tách nhánh từ develop.
+
+Cú pháp: feature/[tên-thành-viên]/[tên-tính-năng]
+
+Ví dụ: feature/dangquoc/quanlyphim-be, feature/huy/quanlyphim-fe.
+
+Nhánh sửa lỗi (dangquoc/Fix branches): fix/[tên-thành-viên]/[tên-lỗi]
+
+2. QUY TẮC COMMIT MESSAGE (CONVENTIONAL COMMITS)
+Yêu cầu 100% tuân thủ để khi nhìn vào lịch sử (Git Log) biết ngay ai đã làm gì.
+
+Cú pháp: <type>: <mô tả ngắn bằng tiếng Việt hoặc tiếng Anh>
+
+feat: Thêm tính năng mới (Ví dụ: feat: thêm CRUD cho quản lý phim )
+
+fix: Sửa lỗi (Ví dụ: fix: sửa lỗi cập nhật)
+
+docs: Thay đổi tài liệu, comment (Ví dụ: docs: cập nhật tài liệu)
+
+style: Thay đổi giao diện, format code (không đổi logic)
+
+refactor: Cấu trúc lại code nhưng không đổi tính năng (Ví dụ: refactor: tối ưu hàm tính Haversine)
+
+3. QUY TRÌNH LÀM VIỆC VỚI GITHUB (PULL REQUEST)
+Không bao giờ được dùng lệnh git push origin develop trực tiếp. Phải tuân theo 5 bước:
+
+Cập nhật code mới nhất: git pull origin develop trước khi bắt đầu code.
+
+Tạo nhánh mới: git checkout -b feature/...
+
+Code và Commit: git add . -> git commit -m "feat: ..."
+
+Đẩy nhánh lên GitHub: git push origin feature/...
