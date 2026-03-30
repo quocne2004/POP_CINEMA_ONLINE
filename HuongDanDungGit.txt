@@ -27,7 +27,7 @@ docs: Thay đổi tài liệu, comment (Ví dụ: docs: cập nhật tài liệu
 
 style: Thay đổi giao diện, format code (không đổi logic)
 
-refactor: Cấu trúc lại code nhưng không đổi tính năng (Ví dụ: refactor: tối ưu hàm tính Haversine)
+refactor: Cấu trúc lại code nhưng không đổi tính năng (Ví dụ: refactor: tối ưu hàm createdphim)
 
 3. QUY TRÌNH LÀM VIỆC VỚI GITHUB (PULL REQUEST)
 Không bao giờ được dùng lệnh git push origin develop trực tiếp. Phải tuân theo 5 bước:
